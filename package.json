@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@graphql-hive/gateway": "^1.4.10",
+    "@graphql-mesh/compose-cli": "^1.1.6",
+    "@graphql-mesh/transport-grpc": "^0.0.1",
+    "@omnigraph/grpc": "^0.1.0",
+    "@omnigraph/openapi": "^0.107.5",
+    "express": "^4.21.1"
+  },
+  "scripts": {
+    "start": "npx mesh-compose -o supergraph.graphql && npx hive-gateway supergraph --no-masked-errors"
+  }
+}
