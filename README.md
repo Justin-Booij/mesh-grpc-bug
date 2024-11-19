@@ -1,6 +1,10 @@
 # mesh-grpc-bug
 
-This is a repo for the purpose of reproducing a current bug in graphql-mesh v1 which causes only the last (alphabetically) service added to work
+This is a repo for the purpose of reproducing an [issue](https://github.com/ardatan/graphql-mesh/issues/7962 ) which causes only the last (alphabetically) service added to work properly.
+The alphabetically last service will run properly, while the rest errors with the message:
+`Object at path xx.xxService is not a Service constructor`
+
+expected behaviour is that all services would run without issue.
 
 How to run:
 1. start store-api and pet-api using node `node api.js` f.e on both api's
