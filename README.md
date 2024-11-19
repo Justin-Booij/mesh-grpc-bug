@@ -1,8 +1,8 @@
 # mesh-grpc-bug
 
-This is a repo for the purpose of reproducing an [issue](https://github.com/ardatan/graphql-mesh/issues/7962 ) which causes only the last (alphabetically) service added to work properly.
-The alphabetically last service will run properly, while the rest errors with the message:
-`Object at path xx.xxService is not a Service constructor`
+This is a repo for the purpose of reproducing an [issue](https://github.com/ardatan/graphql-mesh/issues/7962 ) which causes only the last (alphabetically) grpc service added to work properly.
+The alphabetically last grpc service will run properly, while the rest errors with the message:
+`Object at path xx.xxService is not a Service constructor` 
 
 expected behaviour is that all services would run without issue.
 
